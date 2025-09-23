@@ -1,0 +1,835 @@
+2025-08-29 13:22:07,843 - logs.logger_config - INFO - Data fetched successfully
+2025-08-29 13:22:07,858 - logs.logger_config - ERROR - Error while creating DataFrame: 'list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 52, in create_dataframe
+    'title' : article.get('title'),
+              ^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2025-08-29 13:24:29,280 - logs.logger_config - INFO - Data fetched successfully
+2025-08-29 13:24:29,288 - logs.logger_config - ERROR - Error while creating DataFrame: 'list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 52, in create_dataframe
+    'title' : art.get('title'),
+              ^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2025-08-29 13:27:40,986 - logs.logger_config - INFO - Data fetched successfully
+2025-08-29 13:27:40,989 - logs.logger_config - ERROR - Error while creating DataFrame: 'list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 52, in create_dataframe
+    'title' : art.get('title'),
+              ^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2025-08-29 13:34:59,537 - logs.logger_config - INFO - Data fetched successfully
+2025-08-29 13:34:59,546 - logs.logger_config - INFO - DataFrame created with 99 rows
+2025-08-29 13:36:22,010 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-29 13:37:43,610 - logs.logger_config - INFO - Data fetched successfully
+2025-08-29 13:37:43,610 - logs.logger_config - INFO - DataFrame created with 99 rows
+2025-08-29 13:38:44,274 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-29 13:38:50,115 - logs.logger_config - ERROR - Description Translation failed at 16th index : No features in text.
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 98, in get_translated_df
+    lang = detect(text)
+           ^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector_factory.py", line 130, in detect
+    return detector.detect()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 136, in detect
+    probabilities = self.get_probabilities()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 143, in get_probabilities
+    self._detect_block()
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 150, in _detect_block
+    raise LangDetectException(ErrorCode.CantDetectError, 'No features in text.')
+langdetect.lang_detect_exception.LangDetectException: No features in text.
+2025-08-29 13:40:18,544 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-29 13:40:18,544 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-29 13:40:19,762 - logs.logger_config - INFO - Data fetched successfully
+2025-08-29 13:40:19,762 - logs.logger_config - INFO - DataFrame created with 99 rows
+2025-08-29 13:41:28,671 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-29 13:41:50,588 - logs.logger_config - ERROR - Description Translation failed at 34th index : No features in text.
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 98, in get_translated_df
+    lang = detect(text)
+           ^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector_factory.py", line 130, in detect
+    return detector.detect()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 136, in detect
+    probabilities = self.get_probabilities()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 143, in get_probabilities
+    self._detect_block()
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 150, in _detect_block
+    raise LangDetectException(ErrorCode.CantDetectError, 'No features in text.')
+langdetect.lang_detect_exception.LangDetectException: No features in text.
+2025-08-29 13:42:02,774 - logs.logger_config - ERROR - Description Translation failed at 44th index : No features in text.
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 98, in get_translated_df
+    lang = detect(text)
+           ^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector_factory.py", line 130, in detect
+    return detector.detect()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 136, in detect
+    probabilities = self.get_probabilities()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 143, in get_probabilities
+    self._detect_block()
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 150, in _detect_block
+    raise LangDetectException(ErrorCode.CantDetectError, 'No features in text.')
+langdetect.lang_detect_exception.LangDetectException: No features in text.
+2025-08-29 13:42:10,816 - logs.logger_config - ERROR - Description Translation failed at 54th index : No features in text.
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 98, in get_translated_df
+    lang = detect(text)
+           ^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector_factory.py", line 130, in detect
+    return detector.detect()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 136, in detect
+    probabilities = self.get_probabilities()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 143, in get_probabilities
+    self._detect_block()
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 150, in _detect_block
+    raise LangDetectException(ErrorCode.CantDetectError, 'No features in text.')
+langdetect.lang_detect_exception.LangDetectException: No features in text.
+2025-08-29 13:42:15,267 - logs.logger_config - ERROR - Description Translation failed at 60th index : No features in text.
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 98, in get_translated_df
+    lang = detect(text)
+           ^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector_factory.py", line 130, in detect
+    return detector.detect()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 136, in detect
+    probabilities = self.get_probabilities()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 143, in get_probabilities
+    self._detect_block()
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 150, in _detect_block
+    raise LangDetectException(ErrorCode.CantDetectError, 'No features in text.')
+langdetect.lang_detect_exception.LangDetectException: No features in text.
+2025-08-29 13:42:30,020 - logs.logger_config - ERROR - Description Translation failed at 82th index : No features in text.
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 98, in get_translated_df
+    lang = detect(text)
+           ^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector_factory.py", line 130, in detect
+    return detector.detect()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 136, in detect
+    probabilities = self.get_probabilities()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 143, in get_probabilities
+    self._detect_block()
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 150, in _detect_block
+    raise LangDetectException(ErrorCode.CantDetectError, 'No features in text.')
+langdetect.lang_detect_exception.LangDetectException: No features in text.
+2025-08-29 13:42:30,020 - logs.logger_config - ERROR - Description Translation failed at 83th index : No features in text.
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 98, in get_translated_df
+    lang = detect(text)
+           ^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector_factory.py", line 130, in detect
+    return detector.detect()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 136, in detect
+    probabilities = self.get_probabilities()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 143, in get_probabilities
+    self._detect_block()
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 150, in _detect_block
+    raise LangDetectException(ErrorCode.CantDetectError, 'No features in text.')
+langdetect.lang_detect_exception.LangDetectException: No features in text.
+2025-08-29 13:42:35,139 - logs.logger_config - ERROR - Description Translation failed at 89th index : No features in text.
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 98, in get_translated_df
+    lang = detect(text)
+           ^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector_factory.py", line 130, in detect
+    return detector.detect()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 136, in detect
+    probabilities = self.get_probabilities()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 143, in get_probabilities
+    self._detect_block()
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 150, in _detect_block
+    raise LangDetectException(ErrorCode.CantDetectError, 'No features in text.')
+langdetect.lang_detect_exception.LangDetectException: No features in text.
+2025-08-29 13:42:43,421 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-29 13:42:43,421 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-29 13:42:44,357 - logs.logger_config - INFO - Data fetched successfully
+2025-08-29 13:42:44,370 - logs.logger_config - INFO - DataFrame created with 97 rows
+2025-08-29 13:44:00,642 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-29 13:44:14,669 - logs.logger_config - ERROR - Description Translation failed at 18th index : No features in text.
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 98, in get_translated_df
+    lang = detect(text)
+           ^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector_factory.py", line 130, in detect
+    return detector.detect()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 136, in detect
+    probabilities = self.get_probabilities()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 143, in get_probabilities
+    self._detect_block()
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langdetect\detector.py", line 150, in _detect_block
+    raise LangDetectException(ErrorCode.CantDetectError, 'No features in text.')
+langdetect.lang_detect_exception.LangDetectException: No features in text.
+2025-08-29 13:45:20,407 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-29 13:45:20,407 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-29 13:45:21,835 - logs.logger_config - INFO - Data fetched successfully
+2025-08-29 13:45:21,835 - logs.logger_config - INFO - DataFrame created with 98 rows
+2025-08-29 13:46:46,005 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-29 13:48:42,653 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-29 13:48:42,653 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-29 13:48:44,088 - logs.logger_config - INFO - Data fetched successfully
+2025-08-29 13:48:44,090 - logs.logger_config - INFO - DataFrame created with 96 rows
+2025-08-29 13:50:12,051 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-29 13:51:40,417 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-29 13:51:40,420 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 11:53:17,043 - logs.logger_config - ERROR - Error in fetching data HTTPSConnectionPool(host='newsapi.org', port=443): Max retries exceeded with url: /v2/everything?q=Tesla&from=2025-07-29&to=2025-08-27&sortBy=publishedAt&pageSize=100&page=1&apiKey=e05730312aac4819ac382afc0a020f69 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000018F1371C8D0>: Failed to resolve 'newsapi.org' ([Errno 11001] getaddrinfo failed)")) for Tesla
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000018F1371C8D0>: Failed to resolve 'newsapi.org' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='newsapi.org', port=443): Max retries exceeded with url: /v2/everything?q=Tesla&from=2025-07-29&to=2025-08-27&sortBy=publishedAt&pageSize=100&page=1&apiKey=e05730312aac4819ac382afc0a020f69 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000018F1371C8D0>: Failed to resolve 'newsapi.org' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 29, in get_data
+    response = requests.get(self.url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='newsapi.org', port=443): Max retries exceeded with url: /v2/everything?q=Tesla&from=2025-07-29&to=2025-08-27&sortBy=publishedAt&pageSize=100&page=1&apiKey=e05730312aac4819ac382afc0a020f69 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000018F1371C8D0>: Failed to resolve 'newsapi.org' ([Errno 11001] getaddrinfo failed)"))
+2025-08-31 11:53:17,058 - logs.logger_config - WARNING - No articles found in data
+2025-08-31 13:04:14,584 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 13:04:14,588 - logs.logger_config - INFO - DataFrame created with 97 rows
+2025-08-31 13:04:51,994 - logs.logger_config - ERROR - Title Translation failed at 63 index : 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "c:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 80, in get_translated_df
+    text_en = translator.translate(text,dest='en').text
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\googletrans\client.py", line 222, in translate
+    translated_parts = list(map(lambda part: TranslatedPart(part[0], part[1] if len(part) >= 2 else []), parsed[1][0][0][5]))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-31 13:05:17,946 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 13:06:33,372 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 13:06:33,372 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 13:06:37,566 - logs.logger_config - INFO - Stocks data generated for TSLA
+2025-08-31 13:06:37,566 - logs.logger_config - INFO - Workflow completed for Tesla succesfully!
+2025-08-31 13:06:39,327 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 13:06:39,327 - logs.logger_config - INFO - DataFrame created with 99 rows
+2025-08-31 13:21:50,152 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 13:21:50,152 - logs.logger_config - INFO - DataFrame created with 97 rows
+2025-08-31 13:22:43,251 - logs.logger_config - ERROR - Title Translation failed at 63 index : 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "c:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 80, in get_translated_df
+    text_en = translator.translate(text,dest='en').text
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\googletrans\client.py", line 222, in translate
+    translated_parts = list(map(lambda part: TranslatedPart(part[0], part[1] if len(part) >= 2 else []), parsed[1][0][0][5]))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-31 13:23:05,122 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 13:24:25,188 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 13:24:25,190 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 13:24:29,808 - logs.logger_config - INFO - Stocks data generated for TSLA
+2025-08-31 13:24:29,810 - logs.logger_config - INFO - Workflow completed for Tesla succesfully!
+2025-08-31 13:24:31,118 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 13:24:31,118 - logs.logger_config - INFO - DataFrame created with 99 rows
+2025-08-31 13:25:19,576 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 13:37:21,027 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 13:37:21,037 - logs.logger_config - INFO - DataFrame created with 97 rows
+2025-08-31 13:37:47,515 - logs.logger_config - ERROR - Title Translation failed at 63 index : 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "c:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 80, in get_translated_df
+    text_en = translator.translate(text,dest='en').text
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\googletrans\client.py", line 222, in translate
+    translated_parts = list(map(lambda part: TranslatedPart(part[0], part[1] if len(part) >= 2 else []), parsed[1][0][0][5]))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-31 13:38:04,636 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 13:40:43,907 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 13:40:43,907 - logs.logger_config - INFO - DataFrame created with 97 rows
+2025-08-31 13:41:01,320 - logs.logger_config - ERROR - Title Translation failed at 63 index : 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "c:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 80, in get_translated_df
+    text_en = translator.translate(text,dest='en').text
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\googletrans\client.py", line 222, in translate
+    translated_parts = list(map(lambda part: TranslatedPart(part[0], part[1] if len(part) >= 2 else []), parsed[1][0][0][5]))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2025-08-31 13:41:12,874 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 13:41:43,676 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 13:41:43,676 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 13:41:46,082 - logs.logger_config - INFO - Stocks data generated for TSLA
+2025-08-31 13:41:46,082 - logs.logger_config - INFO - Workflow completed for Tesla succesfully!
+2025-08-31 13:41:47,084 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 13:41:47,084 - logs.logger_config - INFO - DataFrame created with 99 rows
+2025-08-31 13:42:11,277 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 13:42:46,174 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 13:42:46,174 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 13:42:47,209 - logs.logger_config - INFO - Stocks data generated for NVDA
+2025-08-31 13:42:47,209 - logs.logger_config - INFO - Workflow completed for Nvidia succesfully!
+2025-08-31 13:42:48,873 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 13:42:48,873 - logs.logger_config - INFO - DataFrame created with 99 rows
+2025-08-31 13:43:59,986 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 13:45:12,106 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 13:45:12,106 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 13:45:13,041 - logs.logger_config - INFO - Stocks data generated for AMZN
+2025-08-31 13:45:13,043 - logs.logger_config - INFO - Workflow completed for Amazon succesfully!
+2025-08-31 13:45:13,844 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 13:45:13,845 - logs.logger_config - INFO - DataFrame created with 96 rows
+2025-08-31 13:45:15,256 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 13:45:15,550 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 13:45:15,550 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 13:45:16,491 - logs.logger_config - INFO - Stocks data generated for GME
+2025-08-31 13:45:16,491 - logs.logger_config - INFO - Workflow completed for Game Stop succesfully!
+2025-08-31 13:45:17,341 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 13:45:17,344 - logs.logger_config - INFO - DataFrame created with 98 rows
+2025-08-31 13:46:59,978 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 13:48:31,148 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 13:48:31,148 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 13:48:32,226 - logs.logger_config - INFO - Stocks data generated for MSFT
+2025-08-31 13:48:32,226 - logs.logger_config - INFO - Workflow completed for Microsoft succesfully!
+2025-08-31 13:48:32,235 - logs.logger_config - INFO - Data saved to entity_data.pkl
+2025-08-31 16:04:28,134 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 16:04:28,134 - logs.logger_config - INFO - DataFrame created with 98 rows
+2025-08-31 16:05:24,479 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 16:06:35,154 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 16:06:35,168 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 16:06:37,812 - logs.logger_config - INFO - Stocks data generated for TSLA
+2025-08-31 16:06:37,816 - logs.logger_config - INFO - Workflow completed for Tesla succesfully!
+2025-08-31 16:06:39,177 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 16:06:39,178 - logs.logger_config - INFO - DataFrame created with 100 rows
+2025-08-31 16:07:35,645 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 16:08:15,652 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 16:08:15,671 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 16:08:16,539 - logs.logger_config - INFO - Stocks data generated for NVDA
+2025-08-31 16:08:16,539 - logs.logger_config - INFO - Workflow completed for Nvidia succesfully!
+2025-08-31 16:08:19,170 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 16:08:19,170 - logs.logger_config - INFO - DataFrame created with 100 rows
+2025-08-31 16:10:01,564 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 16:11:59,046 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 16:11:59,046 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 16:12:00,140 - logs.logger_config - INFO - Stocks data generated for AMZN
+2025-08-31 16:12:00,140 - logs.logger_config - INFO - Workflow completed for Amazon succesfully!
+2025-08-31 16:12:03,484 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 16:12:03,484 - logs.logger_config - INFO - DataFrame created with 100 rows
+2025-08-31 16:13:58,480 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 16:15:52,969 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 16:15:52,969 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 16:15:54,562 - logs.logger_config - INFO - Stocks data generated for AAPL
+2025-08-31 16:15:54,572 - logs.logger_config - INFO - Workflow completed for Apple succesfully!
+2025-08-31 16:15:55,694 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 16:15:55,695 - logs.logger_config - INFO - DataFrame created with 100 rows
+2025-08-31 16:17:48,575 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 16:19:52,677 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 16:19:52,685 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 16:19:53,571 - logs.logger_config - INFO - Stocks data generated for MSFT
+2025-08-31 16:19:53,571 - logs.logger_config - INFO - Workflow completed for Microsoft succesfully!
+2025-08-31 17:06:33,253 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 17:06:33,261 - logs.logger_config - INFO - DataFrame created with 98 rows
+2025-08-31 17:07:06,955 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 17:07:53,518 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 17:07:53,518 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 17:07:55,316 - logs.logger_config - INFO - Stocks data generated for TSLA
+2025-08-31 17:07:55,316 - logs.logger_config - INFO - Workflow completed for Tesla succesfully!
+2025-08-31 17:07:57,172 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 17:07:57,174 - logs.logger_config - INFO - DataFrame created with 100 rows
+2025-08-31 17:08:31,710 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 17:08:49,804 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 17:08:49,806 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 17:08:50,619 - logs.logger_config - INFO - Stocks data generated for NVDA
+2025-08-31 17:08:50,619 - logs.logger_config - INFO - Workflow completed for Nvidia succesfully!
+2025-08-31 17:08:52,474 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 17:08:52,478 - logs.logger_config - INFO - DataFrame created with 100 rows
+2025-08-31 17:09:48,582 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 17:10:59,773 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 17:10:59,773 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 17:11:00,940 - logs.logger_config - INFO - Stocks data generated for AMZN
+2025-08-31 17:11:00,940 - logs.logger_config - INFO - Workflow completed for Amazon succesfully!
+2025-08-31 17:11:01,695 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 17:11:01,695 - logs.logger_config - INFO - DataFrame created with 99 rows
+2025-08-31 17:12:31,406 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 17:13:44,208 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 17:13:44,208 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 17:13:45,116 - logs.logger_config - INFO - Stocks data generated for AAPL
+2025-08-31 17:13:45,116 - logs.logger_config - INFO - Workflow completed for Apple succesfully!
+2025-08-31 17:13:45,951 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 17:13:45,955 - logs.logger_config - INFO - DataFrame created with 100 rows
+2025-08-31 17:15:02,146 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 17:16:26,314 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 17:16:26,316 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 17:16:27,141 - logs.logger_config - INFO - Stocks data generated for MSFT
+2025-08-31 17:16:27,141 - logs.logger_config - INFO - Workflow completed for Microsoft succesfully!
+2025-08-31 17:16:27,147 - logs.logger_config - INFO - Data saved to entity_data.pkl
+2025-08-31 17:28:28,327 - logs.logger_config - INFO - Workflow started for Tesla
+2025-08-31 17:28:29,622 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 17:28:29,622 - logs.logger_config - INFO - DataFrame created with 100 rows
+2025-08-31 17:28:46,779 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 17:29:05,921 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 17:29:05,926 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 17:29:07,773 - logs.logger_config - INFO - Stocks data generated for TSLA
+2025-08-31 17:29:07,773 - logs.logger_config - INFO - Workflow completed for Tesla succesfully!
+2025-08-31 17:29:07,773 - logs.logger_config - INFO - Workflow started for Nvidia
+2025-08-31 17:29:08,473 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 17:29:08,479 - logs.logger_config - INFO - DataFrame created with 100 rows
+2025-08-31 17:29:25,893 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 17:29:52,942 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 17:29:52,942 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 17:29:54,225 - logs.logger_config - INFO - Stocks data generated for NVDA
+2025-08-31 17:29:54,236 - logs.logger_config - INFO - Workflow completed for Nvidia succesfully!
+2025-08-31 17:29:54,236 - logs.logger_config - INFO - Workflow started for Amazon
+2025-08-31 17:29:55,258 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 17:29:55,258 - logs.logger_config - INFO - DataFrame created with 100 rows
+2025-08-31 17:29:58,965 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 17:29:59,440 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 17:29:59,440 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 17:30:00,443 - logs.logger_config - INFO - Stocks data generated for AMZN
+2025-08-31 17:30:00,443 - logs.logger_config - INFO - Workflow completed for Amazon succesfully!
+2025-08-31 17:30:00,443 - logs.logger_config - INFO - Workflow started for Apple
+2025-08-31 17:30:01,304 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 17:30:01,304 - logs.logger_config - INFO - DataFrame created with 100 rows
+2025-08-31 17:30:09,165 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 17:30:10,469 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 17:30:10,472 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 17:30:11,688 - logs.logger_config - INFO - Stocks data generated for AAPL
+2025-08-31 17:30:11,692 - logs.logger_config - INFO - Workflow completed for Apple succesfully!
+2025-08-31 17:30:11,692 - logs.logger_config - INFO - Workflow started for Microsoft
+2025-08-31 17:30:12,771 - logs.logger_config - INFO - Data fetched successfully
+2025-08-31 17:30:12,771 - logs.logger_config - INFO - DataFrame created with 100 rows
+2025-08-31 17:30:15,186 - logs.logger_config - INFO - Titles Translated Succsessfully
+2025-08-31 17:30:16,746 - logs.logger_config - INFO - Descriptions Translated Succesfully
+2025-08-31 17:30:16,746 - logs.logger_config - INFO - DataFrame created successfully!
+2025-08-31 17:30:17,770 - logs.logger_config - INFO - Stocks data generated for MSFT
+2025-08-31 17:30:17,770 - logs.logger_config - INFO - Workflow completed for Microsoft succesfully!
+2025-08-31 17:30:17,792 - logs.logger_config - INFO - Data saved to entity_data.pkl
+2025-09-01 11:35:08,672 - __main__ - INFO - Workflow started for Tesla
+2025-09-01 11:35:09,689 - data.fetch_data - INFO - Data fetched successfully
+2025-09-01 11:35:09,689 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-01 11:35:19,083 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-01 11:35:34,607 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-01 11:35:34,607 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-01 11:35:45,142 - data.fetch_stocks - INFO - Stocks data generated for TSLA
+2025-09-01 11:35:45,142 - __main__ - INFO - Workflow completed for Tesla succesfully!
+2025-09-01 11:35:45,142 - __main__ - INFO - Workflow started for Nvidia
+2025-09-01 11:35:47,206 - data.fetch_data - INFO - Data fetched successfully
+2025-09-01 11:35:47,213 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-01 11:35:59,537 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-01 11:36:15,689 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-01 11:36:15,689 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-01 11:36:18,868 - data.fetch_stocks - INFO - Stocks data generated for NVDA
+2025-09-01 11:36:18,868 - __main__ - INFO - Workflow completed for Nvidia succesfully!
+2025-09-01 11:36:18,868 - __main__ - INFO - Workflow started for Amazon
+2025-09-01 11:36:23,146 - data.fetch_data - INFO - Data fetched successfully
+2025-09-01 11:36:23,148 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-01 11:36:27,742 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-01 11:36:28,024 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-01 11:36:28,024 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-01 11:36:29,105 - data.fetch_stocks - INFO - Stocks data generated for AMZN
+2025-09-01 11:36:29,105 - __main__ - INFO - Workflow completed for Amazon succesfully!
+2025-09-01 11:36:29,105 - __main__ - INFO - Workflow started for Apple
+2025-09-01 11:36:30,022 - data.fetch_data - INFO - Data fetched successfully
+2025-09-01 11:36:30,022 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-01 11:36:34,850 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-01 11:36:35,647 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-01 11:36:35,647 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-01 11:36:36,644 - data.fetch_stocks - INFO - Stocks data generated for AAPL
+2025-09-01 11:36:36,644 - __main__ - INFO - Workflow completed for Apple succesfully!
+2025-09-01 11:36:36,644 - __main__ - INFO - Workflow started for Microsoft
+2025-09-01 11:36:38,420 - data.fetch_data - INFO - Data fetched successfully
+2025-09-01 11:36:38,422 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-01 11:36:39,721 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-01 11:36:40,555 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-01 11:36:40,555 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-01 11:36:41,678 - data.fetch_stocks - INFO - Stocks data generated for MSFT
+2025-09-01 11:36:41,678 - __main__ - INFO - Workflow completed for Microsoft succesfully!
+2025-09-01 11:36:41,688 - __main__ - INFO - Data saved to entity_data.pkl
+2025-09-03 11:36:32,508 - __main__ - INFO - Workflow started for Tesla
+2025-09-03 11:36:35,948 - data.fetch_data - ERROR - Error in fetching data 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=Tesla&from=2025-08-01&sortBy=popularity&pageSize=100&page=1&apiKey=e05730312aac4819ac382afc0a020f69 for Tesla
+Traceback (most recent call last):
+  File "c:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 29, in get_data
+    response.raise_for_status()
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=Tesla&from=2025-08-01&sortBy=popularity&pageSize=100&page=1&apiKey=e05730312aac4819ac382afc0a020f69
+2025-09-03 11:36:35,948 - data.fetch_data - WARNING - No articles found in data
+2025-09-03 11:40:38,210 - __main__ - INFO - Workflow started for Tesla
+2025-09-03 11:40:41,436 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 11:40:41,442 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 11:40:58,988 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 11:41:17,150 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 11:41:17,152 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 11:41:19,455 - data.fetch_stocks - INFO - Stocks data generated for TSLA
+2025-09-03 11:41:19,459 - __main__ - INFO - Workflow completed for Tesla succesfully!
+2025-09-03 11:41:19,459 - __main__ - INFO - Workflow started for Nvidia
+2025-09-03 11:41:21,400 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 11:41:21,400 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 11:41:35,312 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 11:41:56,587 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 11:41:56,589 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 11:41:57,339 - data.fetch_stocks - INFO - Stocks data generated for NVDA
+2025-09-03 11:41:57,340 - __main__ - INFO - Workflow completed for Nvidia succesfully!
+2025-09-03 11:41:57,340 - __main__ - INFO - Workflow started for Meta
+2025-09-03 11:42:00,315 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 11:42:00,317 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 11:42:02,236 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 11:42:03,788 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 11:42:03,788 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 11:42:04,945 - data.fetch_stocks - INFO - Stocks data generated for META
+2025-09-03 11:42:04,945 - __main__ - INFO - Workflow completed for Meta succesfully!
+2025-09-03 11:42:04,945 - __main__ - INFO - Workflow started for Apple
+2025-09-03 11:42:06,415 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 11:42:06,415 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 11:42:12,000 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 11:42:12,940 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 11:42:12,940 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 11:42:14,067 - data.fetch_stocks - INFO - Stocks data generated for AAPL
+2025-09-03 11:42:14,067 - __main__ - INFO - Workflow completed for Apple succesfully!
+2025-09-03 11:42:14,067 - __main__ - INFO - Workflow started for Boeing
+2025-09-03 11:42:15,771 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 11:42:15,771 - data.fetch_data - INFO - DataFrame created with 99 rows
+2025-09-03 11:43:01,365 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 11:43:57,590 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 11:43:57,590 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 11:43:59,207 - data.fetch_stocks - INFO - Stocks data generated for BA
+2025-09-03 11:43:59,207 - __main__ - INFO - Workflow completed for Boeing succesfully!
+2025-09-03 11:43:59,220 - __main__ - INFO - Data saved to entity_data.pkl
+2025-09-03 12:23:34,335 - __main__ - INFO - Workflow started for Tesla
+2025-09-03 12:23:37,238 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 12:23:37,238 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 12:23:55,871 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 12:24:13,974 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 12:24:13,974 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 12:24:20,335 - data.fetch_stocks - INFO - Stocks data generated for TSLA
+2025-09-03 12:24:20,335 - __main__ - INFO - Workflow completed for Tesla succesfully!
+2025-09-03 12:24:20,335 - __main__ - INFO - Workflow started for Nvidia
+2025-09-03 12:24:21,916 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 12:24:21,916 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 12:24:32,842 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 12:24:48,697 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 12:24:48,697 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 12:24:49,910 - data.fetch_stocks - INFO - Stocks data generated for NVDA
+2025-09-03 12:24:49,910 - __main__ - INFO - Workflow completed for Nvidia succesfully!
+2025-09-03 12:24:49,910 - __main__ - INFO - Workflow started for Meta
+2025-09-03 12:24:53,514 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 12:24:53,516 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 12:24:55,530 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 12:24:57,355 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 12:24:57,355 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 12:24:58,511 - data.fetch_stocks - INFO - Stocks data generated for META
+2025-09-03 12:24:58,513 - __main__ - INFO - Workflow completed for Meta succesfully!
+2025-09-03 12:24:58,513 - __main__ - INFO - Workflow started for Apple
+2025-09-03 12:25:00,992 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 12:25:00,994 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 12:25:06,997 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 12:25:07,854 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 12:25:07,854 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 12:25:09,046 - data.fetch_stocks - INFO - Stocks data generated for AAPL
+2025-09-03 12:25:09,052 - __main__ - INFO - Workflow completed for Apple succesfully!
+2025-09-03 12:25:09,052 - __main__ - INFO - Workflow started for Boeing
+2025-09-03 12:25:11,858 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 12:25:11,863 - data.fetch_data - INFO - DataFrame created with 99 rows
+2025-09-03 12:25:53,200 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 12:26:50,849 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 12:26:50,851 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 12:26:52,817 - data.fetch_stocks - INFO - Stocks data generated for BA
+2025-09-03 12:26:52,817 - __main__ - INFO - Workflow completed for Boeing succesfully!
+2025-09-03 12:26:52,822 - __main__ - INFO - Data saved to entity_data.pkl
+2025-09-03 15:19:52,861 - __main__ - INFO - Workflow started for Tesla
+2025-09-03 15:19:54,244 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 15:19:54,244 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 15:20:01,850 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 15:20:10,070 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 15:20:10,070 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 15:20:12,081 - data.fetch_stocks - INFO - Stocks data generated for TSLA
+2025-09-03 15:20:12,082 - __main__ - INFO - Workflow completed for Tesla succesfully!
+2025-09-03 15:20:12,082 - __main__ - INFO - Workflow started for Nvidia
+2025-09-03 15:20:12,956 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 15:20:12,956 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 15:20:22,036 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 15:20:47,169 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 15:20:47,170 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 15:20:48,243 - data.fetch_stocks - INFO - Stocks data generated for NVDA
+2025-09-03 15:20:48,243 - __main__ - INFO - Workflow completed for Nvidia succesfully!
+2025-09-03 15:20:48,243 - __main__ - INFO - Workflow started for Moderna
+2025-09-03 15:20:49,702 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 15:20:49,702 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 15:23:39,835 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 15:26:36,986 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 15:26:36,986 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 15:26:38,380 - data.fetch_stocks - INFO - Stocks data generated for MRNA
+2025-09-03 15:26:38,380 - __main__ - INFO - Workflow completed for Moderna succesfully!
+2025-09-03 15:26:38,380 - __main__ - INFO - Workflow started for Apple
+2025-09-03 15:26:39,531 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 15:26:39,546 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 15:26:44,447 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 15:26:45,095 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 15:26:45,095 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 15:26:46,095 - data.fetch_stocks - INFO - Stocks data generated for AAPL
+2025-09-03 15:26:46,096 - __main__ - INFO - Workflow completed for Apple succesfully!
+2025-09-03 15:26:46,096 - __main__ - INFO - Workflow started for Boeing
+2025-09-03 15:26:47,825 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 15:26:47,828 - data.fetch_data - INFO - DataFrame created with 99 rows
+2025-09-03 15:27:09,290 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 15:27:40,640 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 15:27:40,640 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 15:27:41,693 - data.fetch_stocks - INFO - Stocks data generated for BA
+2025-09-03 15:27:41,695 - __main__ - INFO - Workflow completed for Boeing succesfully!
+2025-09-03 15:27:41,703 - __main__ - INFO - Data saved to entity_data.pkl
+2025-09-03 16:35:01,527 - __main__ - INFO - Workflow started for Tesla
+2025-09-03 16:35:02,315 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 16:35:02,319 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 16:35:09,793 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 16:35:20,158 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 16:35:20,158 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 16:35:21,912 - data.fetch_stocks - INFO - Stocks data generated for TSLA
+2025-09-03 16:35:21,912 - __main__ - INFO - Workflow completed for Tesla succesfully!
+2025-09-03 16:35:21,913 - __main__ - INFO - Workflow started for Nvidia
+2025-09-03 16:35:23,477 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 16:35:23,477 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 16:35:30,079 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 16:35:39,597 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 16:35:39,597 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 16:35:40,325 - data.fetch_stocks - INFO - Stocks data generated for NVDA
+2025-09-03 16:35:40,325 - __main__ - INFO - Workflow completed for Nvidia succesfully!
+2025-09-03 16:35:40,325 - __main__ - INFO - Workflow started for Moderna
+2025-09-03 16:35:41,757 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 16:35:41,757 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 16:37:39,013 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 16:41:21,091 - __main__ - INFO - Workflow started for Tesla
+2025-09-03 16:41:22,340 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 16:41:22,344 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 16:41:29,113 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 16:41:36,103 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 16:41:36,103 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 16:41:39,672 - data.fetch_stocks - INFO - Stocks data generated for TSLA
+2025-09-03 16:41:39,672 - __main__ - INFO - Workflow completed for Tesla succesfully!
+2025-09-03 16:41:39,672 - __main__ - INFO - Workflow started for Nvidia
+2025-09-03 16:41:40,509 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 16:41:40,509 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 16:41:48,301 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 16:41:57,956 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 16:41:57,958 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 16:41:58,638 - data.fetch_stocks - INFO - Stocks data generated for NVDA
+2025-09-03 16:41:58,638 - __main__ - INFO - Workflow completed for Nvidia succesfully!
+2025-09-03 16:41:58,638 - __main__ - INFO - Workflow started for Moderna
+2025-09-03 16:41:59,836 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 16:41:59,842 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 16:43:37,111 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 16:45:23,070 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 16:45:23,070 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 16:45:23,965 - data.fetch_stocks - INFO - Stocks data generated for MRNA
+2025-09-03 16:45:23,965 - __main__ - INFO - Workflow completed for Moderna succesfully!
+2025-09-03 16:45:23,965 - __main__ - INFO - Workflow started for Apple
+2025-09-03 16:45:24,734 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 16:45:24,734 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 16:45:29,889 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 16:45:30,598 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 16:45:30,598 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 16:45:31,963 - data.fetch_stocks - INFO - Stocks data generated for AAPL
+2025-09-03 16:45:31,964 - __main__ - INFO - Workflow completed for Apple succesfully!
+2025-09-03 16:45:31,964 - __main__ - INFO - Workflow started for Boeing
+2025-09-03 16:45:32,869 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 16:45:32,869 - data.fetch_data - INFO - DataFrame created with 99 rows
+2025-09-03 16:45:56,883 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 16:46:24,959 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 16:46:24,959 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 16:46:25,700 - data.fetch_stocks - INFO - Stocks data generated for BA
+2025-09-03 16:46:25,700 - __main__ - INFO - Workflow completed for Boeing succesfully!
+2025-09-03 16:46:25,700 - __main__ - INFO - Data saved to entity_data.pkl
+2025-09-03 16:50:24,171 - __main__ - INFO - Workflow started for Tesla
+2025-09-03 16:50:25,096 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 16:50:25,096 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 16:50:32,232 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 16:50:38,778 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 16:50:38,778 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 16:50:40,860 - data.fetch_stocks - INFO - Stocks data generated for TSLA
+2025-09-03 16:50:40,863 - __main__ - INFO - Workflow completed for Tesla succesfully!
+2025-09-03 16:50:40,863 - __main__ - INFO - Workflow started for Nvidia
+2025-09-03 16:50:41,778 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 16:50:41,778 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 16:50:48,321 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 16:50:58,744 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 16:50:58,744 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 16:50:59,480 - data.fetch_stocks - INFO - Stocks data generated for NVDA
+2025-09-03 16:50:59,480 - __main__ - INFO - Workflow completed for Nvidia succesfully!
+2025-09-03 16:50:59,480 - __main__ - INFO - Workflow started for Pfizer
+2025-09-03 16:51:00,297 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 16:51:00,300 - data.fetch_data - INFO - DataFrame created with 99 rows
+2025-09-03 16:51:47,525 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 16:52:34,318 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 16:52:34,318 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 16:52:35,975 - data.fetch_stocks - INFO - Stocks data generated for PFE
+2025-09-03 16:52:35,975 - __main__ - INFO - Workflow completed for Pfizer succesfully!
+2025-09-03 16:52:35,975 - __main__ - INFO - Workflow started for Apple
+2025-09-03 16:52:36,943 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 16:52:36,943 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 16:52:42,002 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 16:52:43,049 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 16:52:43,049 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 16:52:43,783 - data.fetch_stocks - INFO - Stocks data generated for AAPL
+2025-09-03 16:52:43,783 - __main__ - INFO - Workflow completed for Apple succesfully!
+2025-09-03 16:52:43,783 - __main__ - INFO - Workflow started for Boeing
+2025-09-03 16:52:44,944 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 16:52:44,944 - data.fetch_data - INFO - DataFrame created with 99 rows
+2025-09-03 16:53:07,347 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 16:53:29,790 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 16:53:29,792 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 16:53:30,493 - data.fetch_stocks - INFO - Stocks data generated for BA
+2025-09-03 16:53:30,493 - __main__ - INFO - Workflow completed for Boeing succesfully!
+2025-09-03 16:53:30,502 - __main__ - INFO - Data saved to entity_data.pkl
+2025-09-03 17:06:34,575 - __main__ - INFO - Workflow started for Tesla
+2025-09-03 17:06:36,017 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 17:06:36,024 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 17:06:42,625 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 17:06:49,938 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 17:06:49,938 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 17:06:52,078 - data.fetch_stocks - INFO - Stocks data generated for TSLA
+2025-09-03 17:06:52,078 - __main__ - INFO - Workflow completed for Tesla succesfully!
+2025-09-03 17:06:52,078 - __main__ - INFO - Workflow started for Alphabet
+2025-09-03 17:06:52,944 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 17:06:52,944 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 17:07:49,864 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 17:08:50,973 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 17:08:50,973 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 17:08:52,371 - data.fetch_stocks - INFO - Stocks data generated for GOOGL
+2025-09-03 17:08:52,371 - __main__ - INFO - Workflow completed for Alphabet succesfully!
+2025-09-03 17:08:52,371 - __main__ - INFO - Workflow started for Moderna
+2025-09-03 17:08:53,303 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 17:08:53,305 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 17:10:01,739 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 17:11:26,347 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 17:11:26,347 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 17:11:27,024 - data.fetch_stocks - INFO - Stocks data generated for MRNA
+2025-09-03 17:11:27,024 - __main__ - INFO - Workflow completed for Moderna succesfully!
+2025-09-03 17:11:27,024 - __main__ - INFO - Workflow started for Apple
+2025-09-03 17:11:27,943 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 17:11:27,944 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-03 17:11:32,504 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 17:11:33,263 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 17:11:33,271 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 17:11:33,888 - data.fetch_stocks - INFO - Stocks data generated for AAPL
+2025-09-03 17:11:33,888 - __main__ - INFO - Workflow completed for Apple succesfully!
+2025-09-03 17:11:33,888 - __main__ - INFO - Workflow started for Boeing
+2025-09-03 17:11:34,824 - data.fetch_data - INFO - Data fetched successfully
+2025-09-03 17:11:34,828 - data.fetch_data - INFO - DataFrame created with 99 rows
+2025-09-03 17:12:01,032 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-03 17:12:21,872 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-03 17:12:21,872 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-03 17:12:22,550 - data.fetch_stocks - INFO - Stocks data generated for BA
+2025-09-03 17:12:22,550 - __main__ - INFO - Workflow completed for Boeing succesfully!
+2025-09-03 17:12:22,554 - __main__ - INFO - Data saved to entity_data.pkl
+2025-09-23 22:53:49,832 - __main__ - INFO - Workflow started for Tesla
+2025-09-23 22:53:50,595 - data.fetch_data - INFO - Data fetched successfully
+2025-09-23 22:53:50,601 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-23 22:53:56,744 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-23 22:54:02,068 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-23 22:54:02,068 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-23 22:54:03,855 - data.fetch_stocks - INFO - Stocks data generated for TSLA
+2025-09-23 22:54:03,855 - __main__ - INFO - Workflow completed for Tesla succesfully!
+2025-09-23 22:54:03,855 - __main__ - INFO - Workflow started for Alphabet
+2025-09-23 22:54:05,234 - data.fetch_data - INFO - Data fetched successfully
+2025-09-23 22:54:05,236 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-23 22:55:18,709 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-23 22:56:34,448 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-23 22:56:34,450 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-23 22:56:36,824 - data.fetch_stocks - INFO - Stocks data generated for GOOGL
+2025-09-23 22:56:36,825 - __main__ - INFO - Workflow completed for Alphabet succesfully!
+2025-09-23 22:56:36,825 - __main__ - INFO - Workflow started for Moderna
+2025-09-23 22:56:42,629 - data.fetch_data - INFO - Data fetched successfully
+2025-09-23 22:56:42,631 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-23 22:59:41,921 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-23 23:02:53,961 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-23 23:02:53,963 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-23 23:02:54,943 - data.fetch_stocks - INFO - Stocks data generated for MRNA
+2025-09-23 23:02:54,943 - __main__ - INFO - Workflow completed for Moderna succesfully!
+2025-09-23 23:02:54,943 - __main__ - INFO - Workflow started for Apple
+2025-09-23 23:03:00,398 - data.fetch_data - INFO - Data fetched successfully
+2025-09-23 23:03:00,401 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-23 23:03:00,893 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-23 23:03:01,095 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-23 23:03:01,095 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-23 23:03:01,991 - data.fetch_stocks - INFO - Stocks data generated for AAPL
+2025-09-23 23:03:01,991 - __main__ - INFO - Workflow completed for Apple succesfully!
+2025-09-23 23:03:01,991 - __main__ - INFO - Workflow started for Boeing
+2025-09-23 23:03:03,048 - data.fetch_data - INFO - Data fetched successfully
+2025-09-23 23:03:03,050 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-23 23:03:31,986 - data.fetch_data - ERROR - Title Translation failed at 60 index : the JSON object must be str, bytes or bytearray, not NoneType
+Traceback (most recent call last):
+  File "c:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 78, in get_translated_df
+    text_en = translator.translate(text,dest='en').text
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\googletrans\client.py", line 219, in translate
+    parsed = json.loads(data[0][2])
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+2025-09-23 23:04:06,159 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-23 23:05:22,806 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-23 23:05:22,806 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-23 23:05:23,539 - data.fetch_stocks - INFO - Stocks data generated for BA
+2025-09-23 23:05:23,539 - __main__ - INFO - Workflow completed for Boeing succesfully!
+2025-09-23 23:05:23,548 - __main__ - INFO - Data saved to notebook/entity_data_20250923_230523.pkl
