@@ -16,12 +16,12 @@ def run_workflow():
 
     for entity,ticker in Entities.items():
         logger.info(f"Workflow started for {entity}")    
-        fetch_data_obj = Fetch_data(entity,'2025-09-02')
+        fetch_data_obj = Fetch_data(entity,'2025-08-24')
 
         data = fetch_data_obj.get_data()
         entity_dfs[entity] = fetch_data_obj.get_translated_df(data)
             
-        entity_stocks[entity] = stock_prices(ticker,'2025-08-03','2025-09-22')
+        entity_stocks[entity] = stock_prices(ticker,'2025-08-23','2025-09-24')
 
         logger.info(f"Workflow completed for {entity} succesfully!")
 

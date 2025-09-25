@@ -833,3 +833,159 @@ TypeError: the JSON object must be str, bytes or bytearray, not NoneType
 2025-09-23 23:05:23,539 - data.fetch_stocks - INFO - Stocks data generated for BA
 2025-09-23 23:05:23,539 - __main__ - INFO - Workflow completed for Boeing succesfully!
 2025-09-23 23:05:23,548 - __main__ - INFO - Data saved to notebook/entity_data_20250923_230523.pkl
+2025-09-24 11:27:10,148 - __main__ - INFO - Workflow started for Tesla
+2025-09-24 11:27:11,608 - data.fetch_data - INFO - Data fetched successfully
+2025-09-24 11:27:11,608 - data.fetch_data - INFO - DataFrame created with 0 rows
+2025-09-24 11:29:36,378 - __main__ - INFO - Workflow started for Tesla
+2025-09-24 11:29:38,036 - data.fetch_data - INFO - Data fetched successfully
+2025-09-24 11:29:38,041 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-24 11:29:40,666 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-24 11:29:40,939 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-24 11:29:40,939 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-24 11:29:43,424 - data.fetch_stocks - INFO - Stocks data generated for TSLA
+2025-09-24 11:29:43,433 - __main__ - INFO - Workflow completed for Tesla succesfully!
+2025-09-24 11:29:43,435 - __main__ - INFO - Workflow started for Alphabet
+2025-09-24 11:29:44,442 - data.fetch_data - INFO - Data fetched successfully
+2025-09-24 11:29:44,442 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-24 11:30:09,260 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-24 11:30:45,950 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-24 11:30:45,953 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-24 11:30:46,651 - data.fetch_stocks - INFO - Stocks data generated for GOOGL
+2025-09-24 11:30:46,651 - __main__ - INFO - Workflow completed for Alphabet succesfully!
+2025-09-24 11:30:46,651 - __main__ - INFO - Workflow started for Moderna
+2025-09-24 11:30:47,534 - data.fetch_data - INFO - Data fetched successfully
+2025-09-24 11:30:47,534 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-24 11:33:20,958 - data.fetch_data - ERROR - Title Translation failed at 90 index : The read operation timed out
+Traceback (most recent call last):
+  File "c:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 78, in get_translated_df
+    text_en = translator.translate(text,dest='en').text
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\googletrans\client.py", line 194, in translate
+    data, response = self._translate(text, dest, src)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\googletrans\client.py", line 120, in _translate
+    r = self.client.post(url, params=params, data=data)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpx\_client.py", line 824, in post
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpx\_client.py", line 600, in request
+    return self.send(
+           ^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpx\_client.py", line 620, in send
+    response = self.send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpx\_client.py", line 647, in send_handling_redirects
+    response = self.send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpx\_client.py", line 684, in send_handling_auth
+    response = self.send_single_request(request, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpx\_client.py", line 714, in send_single_request
+    ) = transport.request(
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\connection_pool.py", line 152, in request
+    response = connection.request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\connection.py", line 78, in request
+    return self.connection.request(method, url, headers, stream, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\http2.py", line 118, in request
+    return h2_stream.request(method, url, headers, stream, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\http2.py", line 292, in request
+    status_code, headers = self.receive_response(timeout)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\http2.py", line 344, in receive_response
+    event = self.connection.wait_for_event(self.stream_id, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\http2.py", line 197, in wait_for_event
+    self.receive_events(timeout)
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\http2.py", line 204, in receive_events
+    data = self.socket.read(self.READ_NUM_BYTES, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_backends\sync.py", line 60, in read
+    with map_exceptions(exc_map):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_exceptions.py", line 12, in map_exceptions
+    raise to_exc(exc) from None
+httpcore._exceptions.ReadTimeout: The read operation timed out
+2025-09-24 11:33:42,870 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-24 11:37:12,595 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-24 11:37:12,595 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-24 11:37:13,252 - data.fetch_stocks - INFO - Stocks data generated for MRNA
+2025-09-24 11:37:13,254 - __main__ - INFO - Workflow completed for Moderna succesfully!
+2025-09-24 11:37:13,254 - __main__ - INFO - Workflow started for Apple
+2025-09-24 11:37:15,458 - data.fetch_data - INFO - Data fetched successfully
+2025-09-24 11:37:15,460 - data.fetch_data - INFO - DataFrame created with 100 rows
+2025-09-24 11:37:20,705 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-24 11:37:20,943 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-24 11:37:20,943 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-24 11:37:21,712 - data.fetch_stocks - INFO - Stocks data generated for AAPL
+2025-09-24 11:37:21,712 - __main__ - INFO - Workflow completed for Apple succesfully!
+2025-09-24 11:37:21,712 - __main__ - INFO - Workflow started for Boeing
+2025-09-24 11:37:23,645 - data.fetch_data - INFO - Data fetched successfully
+2025-09-24 11:37:23,647 - data.fetch_data - INFO - DataFrame created with 99 rows
+2025-09-24 11:38:11,516 - data.fetch_data - ERROR - Title Translation failed at 83 index : The read operation timed out
+Traceback (most recent call last):
+  File "c:\Users\SHWETA\Sentiment_analysis\data\fetch_data.py", line 78, in get_translated_df
+    text_en = translator.translate(text,dest='en').text
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\googletrans\client.py", line 194, in translate
+    data, response = self._translate(text, dest, src)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\googletrans\client.py", line 120, in _translate
+    r = self.client.post(url, params=params, data=data)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpx\_client.py", line 824, in post
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpx\_client.py", line 600, in request
+    return self.send(
+           ^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpx\_client.py", line 620, in send
+    response = self.send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpx\_client.py", line 647, in send_handling_redirects
+    response = self.send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpx\_client.py", line 684, in send_handling_auth
+    response = self.send_single_request(request, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpx\_client.py", line 714, in send_single_request
+    ) = transport.request(
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\connection_pool.py", line 152, in request
+    response = connection.request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\connection.py", line 78, in request
+    return self.connection.request(method, url, headers, stream, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\http2.py", line 118, in request
+    return h2_stream.request(method, url, headers, stream, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\http2.py", line 292, in request
+    status_code, headers = self.receive_response(timeout)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\http2.py", line 344, in receive_response
+    event = self.connection.wait_for_event(self.stream_id, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\http2.py", line 197, in wait_for_event
+    self.receive_events(timeout)
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_sync\http2.py", line 204, in receive_events
+    data = self.socket.read(self.READ_NUM_BYTES, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_backends\sync.py", line 60, in read
+    with map_exceptions(exc_map):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\SHWETA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\httpcore\_exceptions.py", line 12, in map_exceptions
+    raise to_exc(exc) from None
+httpcore._exceptions.ReadTimeout: The read operation timed out
+2025-09-24 11:38:24,167 - data.fetch_data - INFO - Titles Translated Succsessfully
+2025-09-24 11:39:27,815 - data.fetch_data - INFO - Descriptions Translated Succesfully
+2025-09-24 11:39:27,815 - data.fetch_data - INFO - DataFrame created successfully!
+2025-09-24 11:39:28,762 - data.fetch_stocks - INFO - Stocks data generated for BA
+2025-09-24 11:39:28,762 - __main__ - INFO - Workflow completed for Boeing succesfully!
+2025-09-24 11:39:28,770 - __main__ - INFO - Data saved to notebook/entity_data_20250924_113928.pkl
