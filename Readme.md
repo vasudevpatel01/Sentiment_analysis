@@ -6,11 +6,13 @@
 This project performs Sentiment Analysis on News Articles using data collected automatically from the News API.
 The main objective is to analyze sentiment trends in news coverage (positive, negative, or neutral) and gain insights into public/media perception on various topics.
 
+![alt text](image.png)
+
 ### Key highlights:
 
 * Automated data pipeline to fetch news articles via the News API.
 
-* Preprocessing & NLP pipeline: cleaning, tokenization, stopword removal, lemmatization.
+* Preprocessing pipeline: cleaning, stopword removal, lemmatization.
 
 * Sentiment classification.
 
