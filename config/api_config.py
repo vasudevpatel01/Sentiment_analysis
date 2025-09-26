@@ -1,5 +1,10 @@
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+
 
 API_CONFIG = {
     "base_url" : r"https://newsapi.org/v2/everything?",
-    "api_key" : "e05730312aac4819ac382afc0a020f69"
+    "api_key" : os.getenv("NEWS_API_KEY")
 }
