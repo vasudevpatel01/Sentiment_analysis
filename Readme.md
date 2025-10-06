@@ -9,18 +9,17 @@ The main objective is to analyze sentiment trends in news coverage (positive, ne
 ![alt text](image.png)
 
 
-
-```
 ### Description
-- **config/** – Configuration files for API keys and project settings.  
-- **data/** – Scripts for fetching and processing data.  
-- **logs/** – Logging configuration and log files.  
-- **notebook/** – Jupyter notebook files and saved data entities.  
-- **main.py** – Main execution script for running the project.  
-- **requirements.txt** – Python dependencies.  
-- **Readme.md** – Project documentation.  
-- **image.png** – Project-related image or visualization.  
-- **.gitignore** – Files/folders ignored by Git.
+```
+- config/ – Configuration files for API keys and project settings.  
+- data/ – Scripts for fetching and processing data.  
+- logs/ – Logging configuration and log files.  
+- notebook/ – Jupyter notebook files and saved data entities.  
+- main.py – Main execution script for running the project.  
+- requirements.txt – Python dependencies.  
+- Readme.md – Project documentation.  
+- image.png – Project-related image or visualization.  
+- .gitignore – Files/folders ignored by Git.
 
 ```
 
