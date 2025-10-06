@@ -10,7 +10,7 @@ The main objective is to analyze sentiment trends in news coverage (positive, ne
 
 
 
-
+```
 ### Description
 - **config/** – Configuration files for API keys and project settings.  
 - **data/** – Scripts for fetching and processing data.  
@@ -22,7 +22,7 @@ The main objective is to analyze sentiment trends in news coverage (positive, ne
 - **image.png** – Project-related image or visualization.  
 - **.gitignore** – Files/folders ignored by Git.
 
-
+```
 
 
 ### Key highlights:
