@@ -32,17 +32,7 @@ if __name__=="__main__":
      entity_dfs,entity_stocks = run_workflow()
 
 
-# with open(r'notebook/entity_data.pkl','wb') as f:
 
-#     try:
-#         pickle.dump((entity_dfs,entity_stocks),f)
-#         logger.info(f"Data saved to entity_data.pkl")
-#     except Exception as e:
-#         logger.exception(f"Error : {e}")
-        
-
-
-# Generate timestamped filename
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 filename = fr'notebook/entity_data_{timestamp}.pkl'
 
